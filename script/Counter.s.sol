@@ -9,11 +9,13 @@ contract CounterScript is Script {
 
     function setUp() public {}
 
-    function run() public {
-        vm.startBroadcast();
-
-        counter = new Counter();
-
-        vm.stopBroadcast();
+    function run() public view {
+        uint256 deployerPrivateKey = vm.envUint("TESTNET_DEPLOYER");
+        address deployer = vm.addr(deployerPrivateKey);
+        console.log("Deployer:", deployer);
+        
+        uint256 balance = deployer.balance;
+        console.log("Deployer balance:", balance);
+        console.log("Deployer balance (ETH):", balance);
     }
 }
