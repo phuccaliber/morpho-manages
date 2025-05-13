@@ -2,20 +2,17 @@
 pragma solidity ^0.8.13;
 
 import {Script, console} from "forge-std/Script.sol";
-import {Counter} from "../src/Counter.sol";
+import "../../lib/morpho-blue/src/Morpho.sol";
+// import "@metamorpho/MetaMorphoV1_1Factory.sol";
 
-contract CounterScript is Script {
-    Counter public counter;
-
-    function setUp() public {}
-
+contract DeployMetaMorpho is Script {
     function run() public {
         uint256 deployerPrivateKey = vm.envUint("TESTNET_DEPLOYER");
         address deployer = vm.addr(deployerPrivateKey);
-        console.log("Deployer:", deployer);
-
         vm.startBroadcast(deployerPrivateKey);
-        counter = new Counter();
+        Morpho morpho = new Morpho(deployer);
+        console.log("Factory deployed at:", address(morpho));
+
         vm.stopBroadcast();
     }
 }
