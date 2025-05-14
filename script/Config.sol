@@ -21,9 +21,10 @@ library Config {
     address internal constant WBTC = address(0); // Replace with actual address
 
     // Oracles
-    address internal constant USDC_ORACLE = address(0); // Replace with actual address
-    address internal constant WETH_ORACLE = address(0); // Replace with actual address
-    address internal constant WBTC_ORACLE = address(0); // Replace with actual address
+    address internal constant MORPHO_CHAINLINK_ORACLE_FACTORY = address(0xE7509Edb9b0612353aBf01160E7Bdb9747336BEE);
+    address internal constant USDC_ORACLE = address(0xA2F78ab2355fe2f984D808B5CeE7FD0A93D5270E);
+    address internal constant BTC_ORACLE = address(0x1b44F3514812d835EB1BDB0acB33d3fA3351Ee43);
+    address internal constant BTC_USDC_ORACLE = address(0xC85B4773A120DdC445C1d0A532EDCc9ba2164Bd5);
 
     // Interest Rate Models
     address internal constant DEFAULT_IRM = address(0); // Replace with actual address
