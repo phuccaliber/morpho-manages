@@ -21,6 +21,7 @@ library Config {
     address internal constant WBTC = address(0); // Replace with actual address
 
     // Oracles
+    address internal constant MORPHO_CHAINLINK_ORACLE_FACTORY = address(0xE7509Edb9b0612353aBf01160E7Bdb9747336BEE);
     address internal constant USDC_ORACLE = address(0); // Replace with actual address
     address internal constant WETH_ORACLE = address(0); // Replace with actual address
     address internal constant WBTC_ORACLE = address(0); // Replace with actual address
