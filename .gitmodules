@@ -13,3 +13,6 @@
 [submodule "lib/morpho-blue-oracles"]
 	path = lib/morpho-blue-oracles
 	url = https://github.com/morpho-org/morpho-blue-oracles
+[submodule "lib/morpho-blue-irm"]
+	path = lib/morpho-blue-irm
+	url = https://github.com/morpho-org/morpho-blue-irm
