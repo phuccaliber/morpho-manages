@@ -8,6 +8,7 @@ library Config {
     address internal constant OWNER = address(0x787bb22b6dEb95D8d61C6628a97448b6fedCb414);
     address internal constant MORPHO_BLUE = address(0xEB4162C6E363e7C925395E82a8fe7BE78bc74A5f);
     address internal constant META_MORPHO_FACTORY = address(0xcB966E4924cFe446cD78720c0453e13C28e94f88);
+    address internal constant ADAPTIVE_CURVE_IRM = address(0x1230FB621E608B68F9468A7342465157Daaf8f2a);
     address internal constant OWBTC = address(0xc7Bd64978a3dC064fe749F05FeC070b939CFaf07);
     address internal constant OWUSDC = address(0x9a00a26415Bf174cA2D74Cf02d9693d27A3A67a5);
 
