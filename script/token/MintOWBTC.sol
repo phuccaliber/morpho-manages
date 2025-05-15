@@ -10,7 +10,7 @@ contract MintOWBTC is Script {
         uint256 deployerPrivateKey = vm.envUint("TESTNET_DEPLOYER");
         vm.startBroadcast(deployerPrivateKey);
         OWBTC owbtc = OWBTC(Config.OWBTC);
-        
+
         address owner = vm.addr(deployerPrivateKey);
 
         uint256 amount = 1e8;
