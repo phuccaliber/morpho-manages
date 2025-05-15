@@ -4,9 +4,8 @@ pragma solidity ^0.8.13;
 import {Script, console} from "forge-std/Script.sol";
 import "../../lib/metamorpho-v1.1/src/MetaMorphoV1_1Factory.sol";
 import "../Config.sol";
-// import "@metamorpho/MetaMorphoV1_1Factory.sol";
 
-contract DeployMetaMorpho is Script {
+contract CreateAVault is Script {
     function run() public {
         uint256 deployerPrivateKey = vm.envUint("TESTNET_DEPLOYER");
         vm.startBroadcast(deployerPrivateKey);

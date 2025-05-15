@@ -6,7 +6,7 @@ import "../../lib/morpho-blue-oracles/src/morpho-chainlink/MorphoChainlinkOracle
 import "../../lib/morpho-blue-oracles/src/morpho-chainlink/MorphoChainlinkOracleV2.sol";
 import "../Config.sol";
 
-contract DeployMetaMorpho is Script {
+contract CreateAnOracle is Script {
     function run() public {
         uint256 deployerPrivateKey = vm.envUint("TESTNET_DEPLOYER");
         vm.startBroadcast(deployerPrivateKey);
